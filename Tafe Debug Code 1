@@ -1,0 +1,28 @@
+/*
+Name: Alexander Piriz
+Purpose: Debug code 1 Part 2
+
+*/
+
+//alert("test") test alert
+function getMarks(){
+	  
+	var marksList = [];
+	var total = 0;
+	
+	for(var i = 1; i<= 5; i++){
+		   var mark = parseInt(prompt("Enter mark #"+ i + ";"));
+			marksList.push(mark);
+			total += mark;   
+	 }
+			// Calculale average
+		   document.getElementById("sum").innerHTML="The total of the entered marks is " + total;
+		   var average = total/marksList.length;
+		   document.getElementById("average").innerHTML= "The average of the entered marks is " + average;
+			//Display total and average
+			console.log("The total Marks is " + total);
+			console.log("The average of the marks entered is:" + average);
+		
+			
+}
+
